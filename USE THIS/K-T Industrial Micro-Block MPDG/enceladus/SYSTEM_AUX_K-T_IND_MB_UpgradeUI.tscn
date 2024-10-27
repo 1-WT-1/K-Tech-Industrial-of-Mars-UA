@@ -5,8 +5,7 @@
 [node name="SystemShipUpgradeUI" instance=ExtResource( 1 )]
 slot = "aux.power"
 system = "SYSTEM_AUX_K-T_IND_MB_MPD"
-manual = "SYSTEM_AUX_K-T_IND_MB_MPD_MANUAL"
-specs = "SYSTEM_AUX_K-T_IND_MB_MPD_SPECS"
+manual = "SYSTEM_AUX_MPD_MANUAL"
 price = 35000
 testProtocol = "bootup"
 

@@ -42,8 +42,6 @@ anchor_bottom = 0.0
 margin_top = 129.0
 margin_right = 1196.0
 margin_bottom = 199.0
-manual = "SYSTEM_AUX_K-T_IND_MPD_MANUAL"
-price = 75000
 
 [node name="Mpd1" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/AuxilaryPower/VBoxContainer" index="3"]
 margin_top = 203.0

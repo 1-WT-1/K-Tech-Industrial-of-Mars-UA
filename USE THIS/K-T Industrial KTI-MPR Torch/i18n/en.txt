@@ -1,0 +1,10 @@
+locale|en
+
+SYSTEM_MAIN_ENGINE_KTI-MPR_EIZAP|K-T INDUSTRIAL "MPR" Main Torch
+
+SYSTEM_MAIN_ENGINE_KTI-MPR_EIZAP_DESC| The K-Tech Industrial series MPR RCS thruster, Designed for the heavy hauling ships.
+
+SYSTEM_MAIN_ENGINE_KTI-MPR_EIZAP_SPECS| Thrust: 8000 kN\nExhaust Velocity: 100 Km/s\nReaction Mass Usage: 3.3Kg/s \nPower consumption: 500 MW\nThermal Consumption: 0.1 GW\nOperation mode: pulsed thrust\nPropellant: Magnetically-Pinched Plasma Reactor\nMass: 3000 kg\nManufacturer: K-Tech Industrial
+
+
+ 

@@ -1,0 +1,10 @@
+locale|uk_UA
+
+SYSTEM_THRUSTER_KTI-MTR_Thruster|Маневровий двигун "MTR"  K-T INDUSTRIAL
+
+SYSTEM_THRUSTER_KTI-MTR_Thruster_DESC|Маневровий двигу серії MTR від K-Tech Industrial, коли маневреність потрібна вже вчора.
+
+SYSTEM_THRUSTER_KTI-MTR_Thruster_SPECS|Тяга: 900 kN\nШвидкість вихлопу: 75 км/с\nЕнергоспоживання: 500 MW\nТеплоспоживання: 4.0 GW\nРежим роботи: Імпульсна тягя\nРnобоча маса: Киснево-воднева плазма\nВага: 15 кг (на двигун)\nВиробник: K-Tech Industrial
+
+
+ 

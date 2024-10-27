@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ships/RA-TRTL.tscn" type="PackedScene" id=2]
+
+[node name="KTI-TRTL" instance=ExtResource( 2 )]
+shipName = "SHIP_TRTL_KTI"
+
+[node name="left-bay" parent="." index="35" instance=ExtResource( 1 )]
+visible = false
+position = Vector2( -47, -187 )
+z_as_relative = false
+slot = "leftBay1"
+toggleCommand = "ship_slot_4"
+
+[node name="SYSTEM_PDMWG-L" parent="left-bay" index="13"]
+position = Vector2( -200, 81 )
+z_index = 27
+
+[node name="SYSTEM_ACTEMD14" parent="left-bay" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="left-bay" index="20"]
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="SYSTEM_HUNK-L" parent="left-bay" index="24"]
+rotation = -0.174533
+
+[node name="SYSTEM_EXMONO-L" parent="left-bay" index="27"]
+visible = true
+
+[node name="SYSTEM_PDT-L" parent="left-bay" index="29"]
+position = Vector2( -190, 0 )
+rotation = -1.0472
+z_index = 27
+
+[node name="right-bay" parent="." index="36" instance=ExtResource( 1 )]
+visible = false
+position = Vector2( 47, -187 )
+z_as_relative = false
+slot = "rightBay1"
+toggleCommand = "ship_slot_5"
+
+[node name="SYSTEM_PDMWG-R" parent="right-bay" index="14"]
+position = Vector2( 200, 81 )
+z_index = 27
+
+[node name="SYSTEM_ACTEMD14" parent="right-bay" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="right-bay" index="20"]
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="SYSTEM_HUNK-R" parent="right-bay" index="23"]
+rotation = 0.174533
+
+[node name="SYSTEM_PDT-R" parent="right-bay" index="30"]
+position = Vector2( 190, 0 )
+rotation = 1.0472
+z_index = 27
+
+[editable path="AI"]
+[editable path="left-bay"]
+[editable path="right-bay"]

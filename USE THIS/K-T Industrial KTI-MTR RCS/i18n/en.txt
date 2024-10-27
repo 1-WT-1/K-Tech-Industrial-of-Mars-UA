@@ -1,0 +1,10 @@
+locale|en
+
+SYSTEM_THRUSTER_KTI-MTR_Thruster|K-T INDUSTRIAL "MTR" RCS Thrusters
+
+SYSTEM_THRUSTER_KTI-MTR_Thruster_DESC| The K-Tech Industrial series MTR RCS thruster, When you need manueverability yesterday.
+
+SYSTEM_THRUSTER_KTI-MTR_Thruster_SPECS| Thrust: 900 kN\nExhaust Velocity: 75 Km/s\nPower consumption: 500 MW\nThermal Consumption: 4.0 GW\nOperation mode: pulsed thrust\nPropellant: Oxygen-Hydrogen Plasma\nMass: 15 kg (per thruster)\nManufacturer: K-Tech Industrial
+
+
+ 

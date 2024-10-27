@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://sfx/thruster-eit.tscn" type="PackedScene" id=1]
+
+[node name="SYSTEM_THRUSTER_KTI-MPR_EIT" instance=ExtResource( 1 )]
+repairReplacementPrice = 28000
+repairFixPrice = 16000
+repairFixTime = 6
+thrust = 20000
+damageWearCapacity = 12200.0
+damageBentCapacity = 6000.0
+damageChokeCapacity = 6000.0
+specificImpulse = 100.0
+thermalFactor = 8.0
+powerDraw = 80000.0
+gimbal = 0.559
+gimbalPerSecond = 2.793
+gimbalVectoredThrust = true
+externalPower = true
+systemName = "SYSTEM_THRUSTER_KTI-MPR_EIT"

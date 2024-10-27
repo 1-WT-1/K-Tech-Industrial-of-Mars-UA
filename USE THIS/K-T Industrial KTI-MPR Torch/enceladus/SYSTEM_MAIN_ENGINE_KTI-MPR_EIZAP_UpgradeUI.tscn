@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://enceladus/SystemShipUpgradeUI.tscn" type="PackedScene" id=1]
+
+[node name="SYSTEM_MAIN_ENGINE_KTI-MPR_EIZAP" instance=ExtResource( 1 )]
+slot = "propulsion.main"
+system = "SYSTEM_MAIN_ENGINE_KTI-MPR_EIZAP"
+manual = "SYSTEM_MAIN_ENGINE_MANUAL"
+specs = "SYSTEM_MAIN_ENGINE_KTI-MPR_EIZAP_SPECS"
+price = 1250000
+testProtocol = "autopilot"
+warnIfElectricBelow = 150.0
+
+[node name="System" parent="HBox" index="0"]
+text = "SYSTEM_MAIN_ENGINE_KTI-MPR_EIZAP"

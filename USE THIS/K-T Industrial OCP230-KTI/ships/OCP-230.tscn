@@ -1,0 +1,108 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://ships/ocp-209.tscn" type="PackedScene" id=1]
+[ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ships/WeaponSlot.gd" type="Script" id=3]
+
+[node name="OCP-230" instance=ExtResource( 1 )]
+specialPrice = 2500000
+shipName = "SHIP_OCP230-KTI"
+processedCargoCapacity = 60000
+dronePartsMax = 100000
+
+[node name="thruster-br" parent="." index="13"]
+position = Vector2( 151, 273 )
+rotation = -1.06465
+
+[node name="thruster-bl" parent="." index="14"]
+position = Vector2( -151, 273 )
+rotation = 1.06465
+
+[node name="thruster-tl" parent="." index="15"]
+position = Vector2( -151, -274 )
+rotation = 1.98968
+
+[node name="thruster-tr" parent="." index="16"]
+position = Vector2( 151, -274 )
+rotation = -1.98968
+
+[node name="WeaponLeft" parent="." index="19"]
+position = Vector2( 188, -250 )
+rotation = 1.5708
+
+[node name="WeaponRight" parent="." index="20"]
+position = Vector2( 187, 245 )
+rotation = 1.5708
+
+[node name="SYSTEM_ACTEMD14" parent="WeaponHardTop" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="WeaponHardTop" index="20"]
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="SYSTEM_ACTEMD14" parent="WeaponHardRight" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="WeaponHardRight" index="20"]
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="DroneSlot" parent="." index="23" instance=ExtResource( 2 )]
+position = Vector2( 0, -208 )
+slot = "leftDrone"
+toggleCommand = "ship_slot_5"
+
+[node name="SYSTEM_ACTEMD14" parent="DroneSlot" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="DroneSlot" index="20"]
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="DroneSlot2" parent="." index="24" instance=ExtResource( 2 )]
+position = Vector2( 0, 202 )
+slot = "rightDrone"
+toggleCommand = "ship_slot_6"
+
+[node name="SYSTEM_ACTEMD14" parent="DroneSlot2" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="DroneSlot2" index="20"]
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="Fore MonoPod" type="Node2D" parent="." index="25"]
+script = ExtResource( 3 )
+slot = "leftBay1"
+default = "SYSTEM_EXOMONO-L"
+toggleCommand = "ship_slot_7"
+
+[node name="SYSTEM_EXMONO-L" parent="Fore MonoPod" index="0" instance_placeholder="res://ships/modules/StorageContainerDockMono-L.tscn"]
+position = Vector2( -71, -132 )
+flip = true
+
+[node name="Aft MonoPod" type="Node2D" parent="." index="26"]
+script = ExtResource( 3 )
+slot = "rightBay1"
+default = "SYSTEM_EXOMONO-R"
+toggleCommand = "ship_slot_8"
+
+[node name="SYSTEM_EXMONO-R" parent="Aft MonoPod" index="0" instance_placeholder="res://ships/modules/StorageContainerDockMono.tscn"]
+position = Vector2( -71, 132 )
+rotation = -3.14159
+
+[editable path="WeaponHardTop"]
+[editable path="WeaponHardRight"]
+[editable path="DroneSlot"]
+[editable path="DroneSlot2"]
+[editable path="MineralProcessingUnit_FSO"]
+[editable path="AI"]

@@ -1,0 +1,7 @@
+locale|uk_UA
+
+SYSTEM_AUX_KTI_BB_MPD|MPDG "Великий-Блок" K-T INDUSTRIAL
+
+SYSTEM_AUX_KTI_BB_MPD_MANUAL|У співпраці з NTCED, K-Tech Industrial представляє серію МПДГ "Великий-Блок". Використовуючи спеціальний мікрореактор, що виробляє виділене теплове тепло для роботи, ви можете бути впевнені, що у вас ніколи не закінчиться енергія.
+
+SYSTEM_AUX_KTI_BB_MPD_SPECS|Енергоспоживання: 100 MW \nТеплоспоживання: 3 GW \nПотужність (номінальна): 5000 MW \nМаса: 8 000 кг \nТип: MPDG \nВиробник: K-Tech Industrial/NTCED

@@ -1,0 +1,11 @@
+locale|en
+
+SHIP_OCP230-KTI|K-T INDUSTRIAL "OCP230-KTI"
+
+SHIP_OCP230-KTI_DESC| The third new ship variant that K-Tech Industrial Shipyards designed was the "OCP230-KTI".  The original Obonto Microengineering OCP209 was a never properly designed for mining in the belt, however the improved "OCP230-KTI" variant should be a pleasant upgrade to miners. the biggest change is with the low-stress hardpoints which have been rotated and split, the left hardpoint is still located near the hab, but the right hardpoint has been moved to the rear reactor housing, both slots have been rotated to face to the right, the same direction as the ships cargo bay opening.  Two new dedicated drone hardpoints have been added to support large scale mining, and the internal processed material bays have been slightly expanded to hold 60,000Kg(combined).
+
+
+SHIP_OCP230-KTI_SPECS| Make: K-Tech Industrial \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDrone Hardpoints: 2\nCrew: 8 \nDry mass(Approximate): 400,000 kg\nCargo bay: 700 m^3\nProcessed cargo storage(combined): 60,000kg
+
+
+ 

@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ships/modules/ThrusterSlot.gd" type="Script" id=1]
+
+[node name="BKUPPowerSlot" type="Node2D"]
+script = ExtResource( 1 )
+notAThruster = true
+type = "bkup.power"
+default = "SYSTEM_NONE"
+
+[node name="SYSTEM_AUX_MPD" parent="." instance_placeholder="res://ships/modules/AuxMpd.tscn"]
+repairReplacementPrice = 300000
+repairFixPrice = 50000
+thermal = 50000.0
+mass = 2500.0
+
+[node name="SYSTEM_AUX_MPD_MK2" parent="." instance_placeholder="res://ships/modules/AuxMpd.tscn"]
+repairReplacementPrice = 500000
+repairFixPrice = 50000
+powerDraw = 100000.0
+thermal = 100000.0
+powerSupply = 700000.0
+mass = 4000.0
+systemName = "SYSTEM_AUX_MPD_MK2"
+
+[node name="SYSTEM_AUX_MPD_MK3" parent="." instance_placeholder="res://ships/modules/AuxMpd.tscn"]
+repairReplacementPrice = 800000
+repairFixPrice = 50000
+powerDraw = 150000.0
+thermal = 150000.0
+powerSupply = 1.05e+06
+mass = 8000.0
+systemName = "SYSTEM_AUX_MPD_MK3"
+
+[node name="SYSTEM_AUX_SMES" parent="." instance_placeholder="res://ships/modules/AuxSmes.tscn"]
+repairReplacementPrice = 400000
+repairFixPrice = 50000
+powerDraw = 100000.0
+powerSupply = 3e+06
+capacity = 1.8e+07
+mass = 1000.0
+
+[node name="SYSTEM_AUX_SMES_MK2" parent="." instance_placeholder="res://ships/modules/AuxSmes.tscn"]
+repairReplacementPrice = 800000
+repairFixPrice = 50000
+powerDraw = 150000.0
+powerSupply = 3e+06
+capacity = 3.2e+07
+systemName = "SYSTEM_AUX_SMES_MK2"
+mass = 2000.0
+
+[node name="SYSTEM_AUX_SMES_MK3" parent="." instance_placeholder="res://ships/modules/AuxSmes.tscn"]
+repairReplacementPrice = 1200000
+powerDraw = 200000.0
+powerSupply = 6e+06
+capacity = 5e+07
+systemName = "SYSTEM_AUX_SMES_MK3"
+mass = 3500.0

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ships/modules/AuxMpd.tscn" type="PackedScene" id=1]
+
+[node name="SYSTEM_AUX_K-T_IND_MPD" instance=ExtResource( 1 )]
+repairReplacementPrice = 40000
+repairFixPrice = 6000
+repairFixTime = 2
+powerDraw = 30000.0
+thermal = 2e+06
+powerSupply = 250000.0
+windupTime = 10
+mass = 2000.0
+systemName = "SYSTEM_AUX_K-T_IND_MPD"

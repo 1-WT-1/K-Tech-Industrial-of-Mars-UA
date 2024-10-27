@@ -1,0 +1,10 @@
+locale|en
+
+SYSTEM_THRUSTER_KTI-MPR_EIT|K-T INDUSTRIAL "MPR" RCS Thrusters
+
+SYSTEM_THRUSTER_KTI-MPR_EIT_DESC| The K-Tech Industrial series MPR RCS thruster, Designed for the heavy hauling ships.
+
+SYSTEM_THRUSTER_KTI-MPR_EIT_SPECS| Thrust: 2000 kN\nExhaust Velocity: 100 Km/s\nReaction Mass Usage: 30Kg/s \nPower consumption: 80 MW\nThermal Consumption: 0.2 GW\nOperation mode: pulsed thrust\nPropellant: Magnetically-Pinched Plasma Reactor\nMass: 15 kg (per thruster)\nManufacturer: K-Tech Industrial
+
+
+ 

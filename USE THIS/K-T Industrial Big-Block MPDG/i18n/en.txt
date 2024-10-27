@@ -1,0 +1,7 @@
+locale|en
+
+SYSTEM_AUX_KTI_BB_MPD|K-T INDUSTRIAL "Big-Block" MPDG 
+
+SYSTEM_AUX_KTI_BB_MPD_MANUAL| In collaboration with NTCED, K-Tech Industrial presents the Big-Block series MPDG, Utilizing a dedicated micro reactor producing dedicated thermal heat to run on, you can rest assured that you will never run out of power.
+
+SYSTEM_AUX_KTI_BB_MPD_SPECS|Power draw: 100 MW\nThermal draw: 3 GW\nPower (nominal): 5000 MW\nMass: 8,000 kg\nType: MPDG\nManufacturer: K-Tech Industrial/NTCED

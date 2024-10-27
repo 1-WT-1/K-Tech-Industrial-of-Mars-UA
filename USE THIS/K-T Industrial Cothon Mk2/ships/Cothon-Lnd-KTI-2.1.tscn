@@ -1,0 +1,146 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://ships/obonto-n.png" type="Texture" id=1]
+[ext_resource path="res://ships/obonto-m.png" type="Texture" id=2]
+[ext_resource path="res://ships/obonto-cd.png" type="Texture" id=3]
+[ext_resource path="res://ships/obonto-cl.png" type="Texture" id=4]
+[ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=5]
+[ext_resource path="res://sfx/spark_noise.png" type="Texture" id=6]
+[ext_resource path="res://ships/Hull.gd" type="Script" id=7]
+[ext_resource path="res://ships/Cothon-Lnd.tscn" type="PackedScene" id=8]
+[ext_resource path="res://lights/spotlight.png" type="Texture" id=9]
+[ext_resource path="res://ships/CabinLight.gd" type="Script" id=10]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+blend_mode = 1
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 5 )
+shader_param/maskScale = Vector2( 11, 1 )
+shader_param/frames = Vector2( 1, 1 )
+shader_param/paintJobFactor = 0.0
+shader_param/paintJobBrightAdjust = 16.0
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 1, 0.5 )
+shader_param/sparkColor = Vector3( 50, 10, 100 )
+shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
+shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
+shader_param/ref = 0.1
+shader_param/roughness = 0.5
+shader_param/reflectiveness = 0.25
+shader_param/shine = 1.0
+shader_param/charges = ExtResource( 6 )
+shader_param/map = ExtResource( 2 )
+
+[node name="Cothon-Lnd-KTI" instance=ExtResource( 8 )]
+position = Vector2( 0, 1 )
+crewMoraleBonus = 0.4
+shipName = "SHIP_COTHON_LND_KTI_V2"
+crew = 8
+processedCargoCapacity = 100000
+evaOffset = Vector2( 0, 143 )
+moodChangeMultiplier = 0.0
+
+[node name="Collider" parent="." index="6"]
+visible = false
+
+[node name="thruster-bl" parent="." index="12"]
+position = Vector2( -134, -46 )
+rotation = 0.0
+
+[node name="thruster-br" parent="." index="13"]
+position = Vector2( 134, -47 )
+rotation = 0.0
+
+[node name="thruster-tr" parent="." index="14"]
+position = Vector2( 134, -69 )
+rotation = -3.14159
+
+[node name="thruster-tl" parent="." index="15"]
+position = Vector2( -134, -69 )
+rotation = 3.14159
+
+[node name="CargoBaffles" parent="." index="19"]
+visible = false
+
+[node name="weapon-left-back" parent="." index="28"]
+position = Vector2( -28, -141 )
+z_index = 30
+
+[node name="SYSTEM_EXSTORAGE-L" parent="weapon-left-back" index="15"]
+position = Vector2( -14, 215 )
+
+[node name="weapon-right-back" parent="." index="29"]
+position = Vector2( 28, -141 )
+z_index = 30
+
+[node name="SYSTEM_EXSTORAGE-R" parent="weapon-right-back" index="16"]
+position = Vector2( 15, 216 )
+
+[node name="CentriCabin" type="Sprite" parent="." index="35"]
+material = SubResource( 1 )
+position = Vector2( 0, 143 )
+rotation = 3.14159
+z_index = 30
+z_as_relative = false
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 95, 824, 140, 140 )
+script = ExtResource( 10 )
+computeAcceleration = true
+accelerationToShift = 2
+centrifuge = true
+windupTime = 5.0
+
+[node name="Light" type="Light2D" parent="CentriCabin" index="0"]
+rotation = 3.14159
+enabled = false
+texture = ExtResource( 9 )
+texture_scale = 8.0
+energy = 16.0
+range_height = 20.0
+range_z_min = -4096
+range_z_max = 4096
+
+[node name="Sprite" type="Sprite" parent="CentriCabin" index="1"]
+material = SubResource( 2 )
+z_index = -1
+texture = ExtResource( 3 )
+normal_map = ExtResource( 1 )
+hframes = 11
+region_enabled = true
+region_rect = Rect2( 0, 824, 3630, 140 )
+script = ExtResource( 7 )
+hullCustomPaintFile = "user://custom-ocp-209.png"
+
+[node name="thruster-bl2" parent="." index="36" instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( -64, 205 )
+rotation = 1.5708
+z_index = 15
+command = ">rf"
+
+[node name="thruster-br2" parent="." index="37" instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( 64, 205 )
+rotation = -1.5708
+z_index = 15
+command = "<lf"
+
+[node name="thruster-tr2" parent="." index="38" instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( 57, -245 )
+rotation = -1.5708
+z_index = 15
+command = "<rb"
+
+[node name="thruster-tl2" parent="." index="39" instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( -53, -245 )
+rotation = 1.5708
+z_index = 15
+command = ">lb"
+
+[editable path="CargoBaffles"]
+[editable path="weapon-left"]
+[editable path="weapon-right"]
+[editable path="weapon-left-back"]
+[editable path="weapon-right-back"]
+[editable path="AI"]

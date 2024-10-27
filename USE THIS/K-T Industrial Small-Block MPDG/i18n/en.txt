@@ -1,0 +1,11 @@
+locale|en
+
+
+SYSTEM_AUX_K-T_IND_MPD|K-T INDUSTRIAL "Small-Block" MPDG
+
+SYSTEM_AUX_K-T_IND_MPD_DESC| The K-Tech Industrial series MPDG, Built as a cheaper alternative to the MPD5035 series MPDG, producing slightly less power at half the cost. 
+
+SYSTEM_AUX_K-T_IND_MPD_SPECS| Power draw: 40 MW\nThermal draw: 2 GW\nPower (nominal): 250 MW\nMass: 2,000 kg\nType: MPDG\nManufacturer: K-Tech Industrial
+
+
+ 

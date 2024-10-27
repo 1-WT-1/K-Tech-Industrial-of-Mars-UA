@@ -1,0 +1,283 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://ships/ATK225.tscn" type="PackedScene" id=1]
+[ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=2]
+[ext_resource path="res://K-T Industrial K225-KTI/ships/modules/BKUPPowerSlot.tscn" type="PackedScene" id=3]
+
+[node name="ATK225" instance=ExtResource( 1 )]
+shipName = "SHIP_AT225-KTI"
+hullPrice = 10000000
+processedCargoCapacity = 26000
+dronePartsMax = 75000
+
+[node name="CollisionPolygon2D" parent="Front Bumper/Claw Holder/Claw Right" index="1"]
+position = Vector2( -16, 10 )
+polygon = PoolVector2Array( 13, -21, 13, -28, 12, -32, 8, -42, 4.11455, -46.4405, 1, -48, 1, -50, 5, -47, 10, -42, 15, -32, 16, -28, 16, -21 )
+
+[node name="CollisionPolygon2D" parent="Front Bumper/Claw Holder/Claw Left" index="1"]
+position = Vector2( 19, 18 )
+polygon = PoolVector2Array( -12, -50, -17, -39, -18, -36, -18, -28, -16, -28, -16, -36, -15, -39, -11, -49, -3, -56, -3, -58 )
+
+[node name="CabinLight" parent="." index="3"]
+visible = false
+
+[node name="Collider" parent="." index="5"]
+visible = false
+
+[node name="CargoHoldAreaHull" parent="." index="7"]
+visible = false
+
+[node name="thruster-lt" parent="." index="8"]
+position = Vector2( -165, -391 )
+rotation = 2.26893
+
+[node name="thruster-rt" parent="." index="9"]
+position = Vector2( 165, -391 )
+rotation = -2.26893
+
+[node name="thruster-tl" parent="." index="10"]
+position = Vector2( -150, -409 )
+rotation = 2.26893
+
+[node name="thruster-tr" parent="." index="11"]
+position = Vector2( 150, -409 )
+rotation = -2.26893
+
+[node name="thruster-ml" parent="." index="12"]
+position = Vector2( -165, 338 )
+rotation = 1.13446
+
+[node name="thruster-mr" parent="." index="13"]
+position = Vector2( 165, 338 )
+rotation = -1.13446
+
+[node name="thruster-bl" parent="." index="14"]
+position = Vector2( -153, 359 )
+rotation = 0.872665
+
+[node name="thruster-br" parent="." index="15"]
+position = Vector2( 153, 359 )
+rotation = -0.872665
+
+[node name="BKUPPowerSlot" parent="." index="30" instance=ExtResource( 3 )]
+
+[node name="weapon-left" parent="." index="32"]
+visible = true
+position = Vector2( -55, -505 )
+
+[node name="SYSTEM_PDMWG-L" parent="weapon-left" index="13"]
+visible = false
+
+[node name="SYSTEM_ACL200P" parent="weapon-left" index="20"]
+visible = true
+
+[node name="weapon-left2" parent="." index="33" instance=ExtResource( 2 )]
+position = Vector2( -100, -505 )
+z_index = -26
+slot = "leftBack"
+toggleCommand = "ship_slot_1"
+
+[node name="SYSTEM_ACTEMD14" parent="weapon-left2" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="weapon-left2" index="20"]
+visible = true
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="SYSTEM_HUNK-L" parent="weapon-left2" index="24"]
+position = Vector2( 0, 80 )
+rotation = 0.174533
+
+[node name="SYSTEM_PDT-L" parent="weapon-left2" index="29"]
+position = Vector2( -69, -71 )
+
+[node name="weapon-right2" parent="." index="34" instance=ExtResource( 2 )]
+position = Vector2( 100, -505 )
+z_index = -26
+slot = "rightBack"
+toggleCommand = "ship_slot_1"
+
+[node name="SYSTEM_ACTEMD14" parent="weapon-right2" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="weapon-right2" index="20"]
+visible = true
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="SYSTEM_HUNK-R" parent="weapon-right2" index="23"]
+position = Vector2( 0, 80 )
+rotation = -0.174533
+
+[node name="SYSTEM_PDT-R" parent="weapon-right2" index="30"]
+position = Vector2( 69, -71 )
+
+[node name="weapon-left3" parent="." index="35" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( -114, -71 )
+z_index = 25
+slot = "leftDrone"
+command = ""
+toggleCommand = "ship_slot_1"
+
+[node name="SYSTEM_DND_HAUL" parent="weapon-left3" index="7"]
+visible = true
+
+[node name="SYSTEM_ACTEMD14" parent="weapon-left3" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="weapon-left3" index="20"]
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="SYSTEM_HUNK-L" parent="weapon-left3" index="24"]
+position = Vector2( 0, 80 )
+rotation = 0.174533
+
+[node name="SYSTEM_PDT-L" parent="weapon-left3" index="29"]
+position = Vector2( -69, -71 )
+
+[node name="weapon-right3" parent="." index="36" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 114, -71 )
+z_index = 25
+slot = "rightDrone"
+command = ""
+toggleCommand = "ship_slot_1"
+
+[node name="SYSTEM_DND_HAUL" parent="weapon-right3" index="7"]
+visible = true
+
+[node name="SYSTEM_ACTEMD14" parent="weapon-right3" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="weapon-right3" index="20"]
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="SYSTEM_HUNK-R" parent="weapon-right3" index="23"]
+position = Vector2( 0, 80 )
+rotation = -0.174533
+
+[node name="SYSTEM_PDT-R" parent="weapon-right3" index="30"]
+position = Vector2( 69, -71 )
+
+[node name="weapon-left4" parent="." index="37" instance=ExtResource( 2 )]
+position = Vector2( -205, -58 )
+rotation = -1.39626
+z_index = 25
+slot = "mainLeft"
+command = ""
+toggleCommand = "ship_slot_2"
+
+[node name="SYSTEM_SALVAGE_ARM" parent="weapon-left4" index="11"]
+visible = true
+flip = true
+
+[node name="SYSTEM_ACTEMD14" parent="weapon-left4" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="weapon-left4" index="20"]
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="SYSTEM_HUNK-L" parent="weapon-left4" index="24"]
+position = Vector2( 0, 80 )
+rotation = 0.174533
+
+[node name="SYSTEM_PDT-L" parent="weapon-left4" index="29"]
+position = Vector2( -69, -71 )
+
+[node name="weapon-right4" parent="." index="38" instance=ExtResource( 2 )]
+position = Vector2( 205, -58 )
+rotation = 1.39626
+z_index = 25
+slot = "mainRight"
+command = "-"
+toggleCommand = "ship_slot_2"
+
+[node name="SYSTEM_SALVAGE_ARM" parent="weapon-right4" index="11"]
+visible = true
+
+[node name="SYSTEM_ACTEMD14" parent="weapon-right4" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="weapon-right4" index="20"]
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="SYSTEM_HUNK-R" parent="weapon-right4" index="23"]
+position = Vector2( 0, 80 )
+rotation = -0.174533
+
+[node name="SYSTEM_PDT-R" parent="weapon-right4" index="30"]
+position = Vector2( 69, -71 )
+
+[node name="weapon-right" parent="." index="39"]
+visible = true
+position = Vector2( 55, -505 )
+toggleCommand = "ship_slot_1"
+
+[node name="SYSTEM_PDMWG-R" parent="weapon-right" index="14"]
+visible = false
+
+[node name="SYSTEM_ACL200P" parent="weapon-right" index="20"]
+visible = true
+
+[node name="weapon-left-back" parent="." index="40"]
+visible = true
+z_as_relative = false
+
+[node name="SYSTEM_EXSTORAGE-L" parent="weapon-left-back" index="15"]
+visible = false
+
+[node name="weapon-right-back" parent="." index="41"]
+z_as_relative = false
+
+[node name="weapon-left-back2" parent="." index="42"]
+z_as_relative = false
+
+[node name="weapon-right-back2" parent="." index="43"]
+z_as_relative = false
+
+[node name="weapon-left-back3" parent="." index="44"]
+z_as_relative = false
+
+[node name="SYSTEM_MWG" parent="weapon-left-back3" index="0"]
+visible = true
+
+[node name="weapon-right-back3" parent="." index="45"]
+z_as_relative = false
+
+[node name="AI" parent="." index="47"]
+visible = false
+
+[editable path="Front Bumper"]
+[editable path="weapon-left"]
+[editable path="weapon-left2"]
+[editable path="weapon-right2"]
+[editable path="weapon-left3"]
+[editable path="weapon-right3"]
+[editable path="weapon-left4"]
+[editable path="weapon-right4"]
+[editable path="weapon-right"]
+[editable path="weapon-left-back"]
+[editable path="weapon-right-back"]
+[editable path="weapon-left-back2"]
+[editable path="weapon-right-back2"]
+[editable path="weapon-left-back3"]
+[editable path="weapon-right-back3"]
+[editable path="AI"]

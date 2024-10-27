@@ -1,0 +1,18 @@
+locale|en
+
+SHIP_KITSUNE|ND-LIS Kitsune
+
+SHIP_KITSUNE_DESC|Nakamura Dynamics launched the \"Kitsune\" shuttle for civilian use as they demilitarized more of their fleet. The variable geometry cargo and their  compatibility with a standard docking bay make them well-adapted to varied tasks within many types of operations. They’re especially suited to transport between larger ships and planetary/lunar surfaces. The production costs outweighed their compact size and their adaptability, though, and Nakamura Dynamics discontinued their line. The Kitsune remains in use in operations across the Sol system, in various roles, and has accumulated a respectable record for reliability.
+Their reliance on maneuvering thrusters makes their maintenance costs much more manageable. However, they lack another source of thrust as backup and have a limited loadout. It is recommended to limit operations to within recovery distance of a garage capable of repairs and modifications.
+
+
+
+SHIP_KITSUMO-KTI|K-T INDUSTRIAL Kitsumo-KTI
+
+SHIP_KITSUMO-KTI_DESC|The second ship variant to roll out of the shipyards of K-Tech Industrial is the "Kitsumo-KTI". The Nakamura-Dynamics designed kitsune never managed to reach the hearts of belters, often seen as a downgrade in capabilities for more money than it was worth.   The "Kitsumo-KTI" aims to aleviate some of those negative points, now boasting a forward high-stress mount, and a new underside mounted low-stress hardpoint, Designers at KTI Shipyards were also able to increase the internal processed material storage to 36,000Kg by removing several layers of insulating styrofoam from the inner hull.  A single main torch finishes off the new design tweaks.
+
+
+SHIP_KITSUMO-KTI_SPECS|Make: K-Tech Industrial \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 1 \nCrew: 3 \nDry mass(Approximate): 30,000 kg\nCargo bay: 70 m^3\nProcessed cargo storage: 36,000 kg
+
+
+ 

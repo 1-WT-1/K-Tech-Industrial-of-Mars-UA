@@ -1,0 +1,17 @@
+locale|en
+
+SHIP_TRTL_KTI|K-T INDUSTRIAL "K37-KTI"
+
+SHIP_TRTL_KTI_DESC| K-Tech Industrial Shipyards designed this upgrade as a simple stepping stone for newer miners to get themselves established, Adding two cargo pod docking bays to the sides of the K37 frame has greatly expanded its cargo capacity for processed ore, and utility for establishing deep belt mining claims. Proper utilization of the cargo pods requires a built in cargobay "Rusatom-Antonoff MPU" at minimum. Warranty for pod docking hardpoints does NOT cover installation of anything other than THI Cargo Containers and B8 Claim Beacons.
+
+
+
+SHIP_TRTL_KTI_SPECS| Make: K-Tech Industrial \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nCrew: 4 \nDocking Bays: 2\nDry mass(Approximate): 30,000 kg\nCargo bay(Approximate): 75 m^3\nProcessed cargo storage: 7,000 kg
+
+
+SHIP_TRTL_LCB_KTI|K-T INDUSTRIAL "K44-KTI"
+
+SHIP_TRTL_LCB_KTI_DESC| K-Tech Industrial Shipyards designed this upgrade as a simple stepping stone for newer miners to get themselves established, Adding two cargo pod docking bays to the sides of the K44 frame has greatly expanded its cargo capacity for processed ore, and utility for establishing deep belt mining claims.  Proper utilization of the cargo pods requires a built in cargobay "Rusatom-Antonoff MPU" at minimum.   Warranty for pod docking hardpoints does NOT cover installation of anything other than THI Cargo Containers and B8 Claim Beacons.
+
+
+SHIP_TRTL_LCB_KTI_SPECS| Make: K-Tech Industrial \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nCrew: 4 \nDocking Bays: 2\nDry mass(Approximate): 40,000 kg\nCargo bay(Approximate): 96 m^3\nProcessed cargo storage: 10,000 kg

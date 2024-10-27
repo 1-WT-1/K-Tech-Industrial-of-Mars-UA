@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://enceladus/SystemShipUpgradeUI.tscn" type="PackedScene" id=1]
+
+[node name="SYSTEM_THRUSTER_KTI-MTR_Thruster" instance=ExtResource( 1 )]
+slot = "propulsion.rcs"
+system = "SYSTEM_THRUSTER_KTI-MTR_Thruster"
+manual = "SYSTEM_THRUSTER_MANUAL"
+specs = "SYSTEM_THRUSTER_KTI-MTR_Thruster_SPECS"
+price = 6000
+testProtocol = "autopilot"
+
+[node name="System" parent="HBox" index="0"]
+text = "SYSTEM_THRUSTER_KTI-MTR_Thruster"

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://sfx/thruster.tscn" type="PackedScene" id=1]
+
+[node name="SYSTEM_THRUSTER_KTI-MTR_Thruster" instance=ExtResource( 1 )]
+thrust = 9000.0
+specificImpulse = 75
+powerDraw = 500.0
+externalPower = true
+systemName = "SYSTEM_THRUSTER_KTI-MTR_Thruster"

@@ -1,0 +1,14 @@
+locale|ua_UK
+
+SYSTEM_MAIN_ENGINE_KTI-MPR_EIZAP|Двигун "MPR" K-T INDUSTRIAL
+
+SYSTEM_MAIN_ENGINE_KTI-MPR_EIZAP_DESC|Двигун серії MPR від K-Tech Industrial, розроблений для важких вантажних кораблів.
+
+SYSTEM_MAIN_ENGINE_KTI-MPR_EIZAP_SPECS|Тяга: 8000 kN\nШвидкість вихлопу: 100 км/с\nЕнергоспоживання: 500 MW\nТеплоспоживання: 0.1 GW\nРежим роботи: імпульсна тяга\nРобоча маса: Магнітно-стиснутий плазмовий реактор\nВага: 3000 кг\nВиробник: K-Tech Industrial
+
+
+ 
+
+
+
+ 

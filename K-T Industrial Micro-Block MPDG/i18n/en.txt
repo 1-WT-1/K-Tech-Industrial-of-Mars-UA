@@ -1,0 +1,10 @@
+locale|en
+
+SYSTEM_AUX_K-T_IND_MB_MPD|K-T INDUSTRIAL "Micro-Block" RTG
+
+SYSTEM_AUX_K-T_IND_MB_MPD_DESC| The K-Tech Industrial series RTG, Built as an entry level power generator for newly established ring miners, the system bleeds hot coolant from the reactor drain lines through a micro turbine that generates power and then fed back into the drain lines to avoid waste.
+
+SYSTEM_AUX_K-T_IND_MB_MPD_SPECS| Power draw: 20 MW\nThermal draw: 0.25 GW\nPower (nominal): 150 MW\nMass: 1,000 kg\nType: MPDG\nManufacturer: K-Tech Industrial
+
+
+ 

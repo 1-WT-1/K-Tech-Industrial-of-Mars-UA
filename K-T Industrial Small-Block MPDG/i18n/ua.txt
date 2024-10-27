@@ -1,0 +1,11 @@
+locale|uk_UA
+
+
+SYSTEM_AUX_K-T_IND_MPD|MPDG "Малий-Блок" K-T INDUSTRIAL 
+
+SYSTEM_AUX_K-T_IND_MPD_DESC|MPDG серії K-Tech Industrial, створений як дешевша альтернатива MPDG серії MPD5035, виробляє трохи менше енергії за вдвічі меншу ціну. 
+
+SYSTEM_AUX_K-T_IND_MPD_SPECS|Енергоспоживання: 40 MW \nТеплоспоживання: 2 GW \nПотужність (номінальна): 250 MW \nМаса: 2 000 кг \nТип: MPDG \nВиробник: K-Tech Industrial
+
+
+ 

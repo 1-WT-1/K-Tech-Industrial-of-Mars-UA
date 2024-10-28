@@ -1,4 +1,4 @@
-locale|ua_UK
+locale|uk_UA
 
 SYSTEM_MAIN_ENGINE_KTI-MPR_EIZAP|Двигун "MPR" KTI
 

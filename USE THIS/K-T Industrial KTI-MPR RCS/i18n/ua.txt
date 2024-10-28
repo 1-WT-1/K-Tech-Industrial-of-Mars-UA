@@ -1,6 +1,6 @@
 locale|uk_UA
 
-SYSTEM_THRUSTER_KTI-MPR_EIT|Маневровий двигун "MPR" K-T INDUSTRIAL 
+SYSTEM_THRUSTER_KTI-MPR_EIT|Маневровий двигун "MPR" KTI
 
 SYSTEM_THRUSTER_KTI-MPR_EIT_DESC|Маневровий двигу серії MPR від K-Tech Industrial, розроблений для важких вантажних кораблів.
 

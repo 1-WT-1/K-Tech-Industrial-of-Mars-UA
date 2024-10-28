@@ -1,6 +1,6 @@
 locale|ua_UK
 
-SYSTEM_MAIN_ENGINE_KTI-MPR_EIZAP|Двигун "MPR" K-T INDUSTRIAL
+SYSTEM_MAIN_ENGINE_KTI-MPR_EIZAP|Двигун "MPR" KTI
 
 SYSTEM_MAIN_ENGINE_KTI-MPR_EIZAP_DESC|Двигун серії MPR від K-Tech Industrial, розроблений для важких вантажних кораблів.
 
